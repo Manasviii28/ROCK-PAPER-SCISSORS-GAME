@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle at top, #2c504a, #0f2a26);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    color: rgb(250, 229, 215);
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background: white;
+    color: #1e293b;
+
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #facc15;
+    color: black;
+}
+
+/* Reset button */
+.reset {
+    background: #ef4444;
+    color: white;
+}
+
+.reset:hover {
+    background: #dc2626;
+}
+
+/* Output boxes */
+.player,
+.computer,
+.res,
+.sc {
+    margin-top: 12px;
+    padding: 10px 15px;
+
+    min-width: 220px;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+
+    font-size: 18px;
+}
+
+/* Score highlight */
+.sc {
+    font-weight: bold;
+    color: #facc15;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .player,
+    .computer,
+    .res,
+    .sc {
+        width: 90%;
+    }
+}
