@@ -5,6 +5,7 @@ A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript.
 ## Features
 - Play against the computer
 - Score tracking with localStorage
+- shows your wins,losses or tie
 - Responsive UI
 
 ## Technologies Used
